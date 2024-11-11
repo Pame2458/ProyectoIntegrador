@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Aprende coreano</title>
+</head>
+<body>
+  <header>
+    <nav>
+        <div class="menu-icon" onclick="toggleMenu()">
+            &#9776;
+        </div>
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="audiovisuales.html">Cultura</a></li>
+          <li><a href="datos.html">Recursos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+<br>
+    <h1>¡NO DUDES EN CONTACTARNOS!</h1>
+    <p class="text-secondary-emphasis">Visto el interés que despierta la cultura coreana, no resulta difícil explorar el idioma fuera de las lecciones. Puedes seguir practicando mirando, K-dramas, escuchando K-pop, mirando videos en youtube, inclusive puedes agendar una clase con un tutor de coreano nativo.</p>
+    <div class="contenedor"><img  src="audiovisuales/fondo.png" alt=""></div>
+    <div class="contact-form">
+        <h2>Contáctame para clases de Coreano</h2>
+        <form action="" method="post">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+    </div>
+
+ <footer>
+  <div>
+    <ul class="pagination">
+      <li class="page-item disabled">
+        <a class="page-link" href="#">&laquo;</a>
+      </li>
+      <li class="page-item active">
+        <a class="page-link" href="index.html">1</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="audiovisuales.html">2</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="datos.html">3</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="contacto.html">4</a>
+      </li>
+      
+    </ul>
+  </div>
+  <div>
+ </footer>
+    <script src="script.js"></script>
+</body>
+</html>

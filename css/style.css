@@ -1,0 +1,238 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1, h2{
+    text-align: center;
+}
+p{
+    margin: 25px;
+    font-size: 20px;
+}
+
+
+header {
+    background-color: #c9d3e7;
+    color: rgb(19, 29, 43);
+    padding: 10px 20px;
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+nav ul li a {
+    color:rgb(28, 41, 70);
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: background-color 0.3s, color 0.3s; /* Suaviza el cambio de color */
+}
+
+nav ul li a:hover {
+    background-color: rgb(40, 54, 85); /* Color de fondo al hacer hover */
+    color: #eaedf1; /* Color del texto al hacer hover */
+    border-radius: 5px; /* Bordes redondeados para un efecto visual atractivo */
+}
+
+.menu {
+    display: flex;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+    }
+    
+    .menu-icon {
+        display: block;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+}
+ /* Estilos del contenedor del carrusel */
+ .carrusel {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  /* Estilos de las imágenes del carrusel */
+  .carrusel-img {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta las imágenes para cubrir el área */
+    border-radius: 10px; /* Bordes redondeados en las fotos */
+    transition: transform 0.3s ease;
+  }
+
+  /* Botones de navegación */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s;
+    border-radius: 0 3px 3px 0;
+    
+  }
+
+  /* Posición de los botones */
+  .prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .next {
+    right: 0;
+    border-radius: 3px 3px 0 0;
+  }
+
+  /* Efecto de hover en los botones */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  footer{
+    
+        color:rgb(146, 164, 202);
+        text-decoration: none;
+        padding: 8px 16px;
+        transition: background-color 0.3s, color 0.3s; /* Suaviza el cambio de color */
+
+  }
+ 
+  .container {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    background-color: #79a0e7;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 90vw;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el cursor */
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-content h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.card-content p {
+    margin: 8px 0 0;
+    font-size: 0.9em;
+    color: #666;
+}
+.contenedor {
+    text-align: center;
+}
+.centrado video{
+    justify-content: center;
+    padding: 10px;
+    width: 30%;
+    margin-top: 40px;
+    margin-left: 500px;
+    background-color: rgb(145, 117, 180);
+    border-radius: 2rem;
+}
+
+
+.contact-form {
+    margin: 25px;
+    background-color: #eef0f3;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+}
+
+.contact-form h2 {
+    margin-top: 0;
+    color: #333;
+    text-align: center;
+}
+
+.contact-form label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #374866;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #9fb4ee;
+}

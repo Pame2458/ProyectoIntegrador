@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Aprende coreano</title>
+</head>
+<body>
+  <header>
+    <nav>
+        <div class="menu-icon" onclick="toggleMenu()">
+            &#9776;
+        </div>
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="audiovisuales.html">Cultura</a></li>
+          <li><a href="datos.html">Recursos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+<br>
+    <h1>¡APRENDE COREANO!</h1>
+    <p class="text-secondary-emphasis">Existen más razones que amar a Corea del Sur y su idioma para querer aprender este hermoso idioma.    
+       Como amante de la cultura coreana me he dado cuenta de muchas cosas que no entendía antes de saber coreano.  
+       Durante  mi vida como kpoper me he dado cuenta de muchas cosas y he escuchado otras y llegué a la conclusión que aprender coreano es lo mejor. </p>
+
+<div class="carrusel">
+  <!-- Imágenes del carrusel -->
+  <img class="carrusel-img" src="audiovisuales/portada.png" alt="Imagen 1">
+  <img class="carrusel-img" src="audiovisuales/coreano.png" alt="Imagen 2">
+  <img class="carrusel-img" src="audiovisuales/coreano1.png" alt="Imagen 3">
+
+  <!-- Botones de navegación -->
+  <a class="prev" onclick="cambiarImagen(-1)">&#10094;</a>
+  <a class="next" onclick="cambiarImagen(1)">&#10095;</a>
+</div>
+ <footer>
+  <div>
+    <ul class="pagination">
+      <li class="page-item disabled">
+        <a class="page-link" href="#">&laquo;</a>
+      </li>
+      <li class="page-item active">
+        <a class="page-link" href="index.html">1</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="audiovisuales.html">2</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="datos.html">3</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="contacto.html">4</a>
+      </li>
+      
+    </ul>
+  </div>
+  <div>
+ </footer>
+    <script src="script.js"></script>
+</body>
+</html>
